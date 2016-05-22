@@ -91,3 +91,10 @@ http://localhost:8080
 ```
 
 
+### Lancer les tests unitaires
+
+Pour lancer les tests unitaires, vous pouvez lancer la commande : 
+
+```
+grunt coverage
+```
