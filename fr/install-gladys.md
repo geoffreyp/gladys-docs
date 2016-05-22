@@ -35,12 +35,8 @@ cd gladys && git checkout v3
 On exécute la commande suivante toujours dans le dossier gladys : 
 
 ```
-sudo npm install
+sudo npm install && npm install -g sails && npm install -g grunt-cli
 ``` 
-
-```
-sudo npm install -g sails
-```
 
 **Note :** Le sudo n'est pas obligatoire, cela dépend de votre système et de vos droits. A mettre selon votre usage habituel de Node.js.
 
@@ -76,18 +72,10 @@ http://localhost:1337
 ### Lancer Gladys en mode production
 
 
-Tout d'abord on compile les assets :
+Tout d'abord on compile les assets et on initialise Gladys :
 
 ```
-grunt buildProd
-```
-
-**Note :** Si vous avez une erreur comme quoi grunt n'est pas installé sur votre machine, vous pouvez faire `npm install -g grunt`.
-
-Puis, on initialise Gladys : 
-
-```
-node init.js
+grunt buildProd && node init.js
 ```
 
 Enfin, on lance Gladys en production :
