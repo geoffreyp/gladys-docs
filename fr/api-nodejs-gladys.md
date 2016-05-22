@@ -1,135 +1,38 @@
-## AddressToCoordinateService.js 
-## AlarmService.js 
-## CalendarService.js 
-## DistanceService.js 
-## GmailService.js 
-## GoogleCalendarService.js 
-## GoogleContactService.js 
-## GoogleMapsService.js 
-## HookService.js 
-## HouseService.js 
-## HttpService.js
-## iCalService.js 
-## InstallationService.js
-## LifeEventService.js
-## LocationService.js
-## MachineService.js
-## MilightService.js
+##Les fonctions disponibles dans Gladys
 
+<div class="alert alert-info" role="alert" style="padding: 10px;">Attention, cette documentation s'adresse à la version 3.0 de Gladys. La version 2 étant bientôt deprecated, inutile de développer pour la v2 !</div>
 
+Que vous soyez dans des scripts, ou dans un module Gladys, vous pouvez accéder à toutes les fonctions de l'API Gladys.
 
-### turnOn (userId,lampId,callback)
+Ces fonctions sont regroupés sous la variable `gladys` accessible partout.
 
-* userId : l'ID du User qui déclenche l'action
-* lampId: l'ID de la lampe à allumer
-* callback : La fonction appelée quand la tâche est terminée
+### Core
 
-Cette fonction sert à allumer les lampes.
+Ces fonctions font partie du `core` de Gladys, ce sont des fonctions qui intéragissent avec des concepts clés du système. 
 
-**Utilisation dans un script Gladys**
+Pour voir toutes les catégories du core, voir [sur le github](https://github.com/GladysProject/Gladys/tree/v3/api/core).
 
-```
-MilightService.turnOn(1, 1);
+Prenons un exemple, dans le core vous avez un dossier `alarm`, il contient tout le code relatif aux alarmes.
+
+Rentrons dans ce dossier, nous voyons plusieurs fichiers, dont un `index.js`. Ce fichier expose les fonctions du module d'alarme du core.
+
+Comme on peut le voir, le module alarm expose 6 fonctions : 
+
+```javascript
+module.exports.cancel = require('./alarm.cancel.js');
+module.exports.create = require('./alarm.create.js');
+module.exports.delete = require('./alarm.delete.js');
+module.exports.init = require('./alarm.init.js');
+module.exports.update = require('./alarm.update.js');
+module.exports.schedule = require('./alarm.schedule.js');
 ```
 
-Ce qui allumera la lampe ayant l'ID n°1 dans la base de donnée.
+Ainsi, dans un script/module, on pourra faire : 
 
-
-### turnOff (userId,lampId,callback) 
-
-* userId : l'ID du User qui déclenche l'action
-* lampId: l'ID de la lampe à allumer
-* callback : La fonction appelée quand la tâche est terminée
-
-Cette fonction sert à éteindre les lampes.
-**Utilisation dans un script Gladys**
-
-```
-MilightService.turnOff(1, 1);
+```javascript
+gladys.alarm.cancel(...)
+gladys.alarm.create(...)
+etc..
 ```
 
-Eteindra la lampe ayant l'ID n°1.
-
-
-### hue (userId,color,callback)
-
-* userId : l'ID du User qui déclenche l'action
-* color : Couleur ( entre 0 et 255 )
-* callback : La fonction appelée quand la tâche est terminée
-
-Cette fonction modifie la couleur **de la dernière lampe allumée**. 
-
-Utilisation dans un script Gladys :
-
-```
-MilightService.hue(1, 80 );
-```
-Changera la lumière de la dernière ampoule allumée, en vert.
-
-
-### brightness (userId,brightness,callback)
-
-* userId : l'ID du User qui déclenche l'action
-* brightness: Intensité de l'éclairage ( entre 1 et 100 )
-* callback : La fonction appelée quand la tâche est terminée
-
-Cette fonction modifie l'intensité **de la dernière lampe allumée**. 
-
-Utilisation dans un script Gladys :
-
-```
-MilightService.brightness(1, 50 );
-```
-
-Changera l'intensité de la dernière ampoule allumée, à 50.
-
-
-### effectModeNext (userId,callback)
-
-Cette fonction modifie le mode d'éclairage **de la dernière lampe allumée**. 
-
-Utilisation dans un script Gladys :
-
-```
-MilightService.effectModeNext(1);
-```
-
-Changera le mode d'éclairage de la dernière ampoule allumée, au mode suivant.
-
-
-### whiteMode (userId,callback)
-* userId: l'ID du User qui déclenche l'action
-* callback: La fonction appelée quand la tâche est terminée
-
-Cette fonction modifie le mode d'éclairage **de la dernière lampe allumée**, en mode normal.
-
-
-**Utilisation dans un script Gladys**
-
-```
-MilightService.whiteMode(1);
-```
-Changera le mode d'éclairage de la dernière ampoule allumée, en mode normal.
-
-## MotionService.js
-## MusicService.js
-## NotificationService.js
-## Oauth2InfosService.js
-## PhenixElectricService.js
-## pushBulletService.js
-## PushoverService.js 
-## recommendedSleepTime.js
-## RFListenerService.js
-## RoomService.js
-## ScenarioService.js 
-## SchedulerService.js 
-## ScriptService.js
-## SerialPortService.js
-## SocketService.js
-## SpeakService.js
-## SpeakService.js.BKP
-## StartService.js
-## SunriseSunsetService.js
-## TimerService.js
-## UserService.js
-## WeatherService.js
+Et cette logique est la même pour chaque petit module du core !
