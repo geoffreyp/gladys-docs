@@ -75,7 +75,7 @@ http://localhost:1337
 Tout d'abord on compile les assets et on initialise Gladys :
 
 ```
-grunt buildProd && node init.js
+node init.js && grunt buildProd
 ```
 
 Enfin, on lance Gladys en production :

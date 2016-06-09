@@ -70,7 +70,7 @@ http://localhost:1337
 First you need to compile assets ( concat + minify JS & CSS ), and init the tables in MySQL with the following command : 
 
 ```
-grunt buildProd && node init.js
+node init.js && grunt buildProd
 ```
 
 Then, to start Gladys in production, just type : 
