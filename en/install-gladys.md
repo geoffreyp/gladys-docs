@@ -25,7 +25,7 @@ git clone https://github.com/GladysProject/Gladys.git gladys
 Move into the gladys folder, and switch to the v3 branch :
 
 ```
-cd gladys && git checkout v3
+cd gladys
 ```
 
 

@@ -23,10 +23,10 @@ Tout d'abord, on clone Gladys.
 git clone https://github.com/GladysProject/Gladys.git gladys
 ```
 
-On se met dans le dossier gladys, puis on se place sur la branche de développement :
+On se met dans le dossier gladys : 
 
 ```
-cd gladys && git checkout v3
+cd gladys
 ```
 
 
