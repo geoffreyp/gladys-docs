@@ -239,9 +239,9 @@ In your exec function, you will just need to turn on the light identified by the
 
 **Note:** Never ask users to interact directly with your module. They need to only use `gladys.deviceType.exec(...)` function, so that Gladys can update in real time values everywhere ( in the UI, in DB )
 
-#### config
+#### setup
 
-`config` function is called when the user click on the 'Configure' button on the UI in the module view. This is useful if you need to automatically search for devices/refresh the configuration. For example, in the Philips Hue module, when you click on the config button, the function looks for Philips bulbs and configure everything.
+`setup` function is called when the user click on the 'Configure' button on the UI in the module view. This is useful if you need to automatically search for devices/refresh the configuration. For example, in the Philips Hue module, when you click on the config button, the function looks for Philips bulbs and configure everything.
 
 #### command
 

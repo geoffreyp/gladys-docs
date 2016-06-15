@@ -248,9 +248,9 @@ N'hésitez pas à aller voir le module Philips Hue pour comprendre comment j'ai 
 
 **Exemple:** Pour le module Philips hue, pour contrôler la lampe dans un script, l'utilisateur peut utiliser la fonction `gladys.deviceType.exec({...});` et surtout pas les fonctions du module hue !
 
-#### config
+#### setup
 
-La fonction `config` sert à configurer le module depuis l'interface sans devoir spécifiquement créer une vue et un front pour cela. Par exemple, pour les modules qui sont capable de détecter par eux même les périphérique sur le réseau ( Philips hue, Z-wave, Wemo ), il faut à un moment pouvoir lancer cette détection ( par forcément au démarrage, car par exemple pour les hue il faut appuyer sur le bouton du bridge avant ). Cette fonction config sera appelée quand l'utilisateur cliquera sur le bouton "configurer" du module.
+La fonction `setup` sert à configurer le module depuis l'interface sans devoir spécifiquement créer une vue et un front pour cela. Par exemple, pour les modules qui sont capable de détecter par eux même les périphérique sur le réseau ( Philips hue, Z-wave, Wemo ), il faut à un moment pouvoir lancer cette détection ( par forcément au démarrage, car par exemple pour les hue il faut appuyer sur le bouton du bridge avant ). Cette fonction config sera appelée quand l'utilisateur cliquera sur le bouton "configurer" du module.
 
 #### command
 
