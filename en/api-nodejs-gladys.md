@@ -1,7 +1,5 @@
 ##Gladys Node.js API
 
-<div class="alert alert-info" role="alert" style="padding: 10px;">Beware, this documentation is about Gladys 3.0 ! Gladys v2 is going to be deprecated soon, so don't work on it anymore :)</div>
-
 If you are in a script, or in a module, you probably wants to use Gladys functions.
 
 These function are available in the `gladys` variable, which is available everywhere in the code.
