@@ -1,7 +1,5 @@
 ##Les quatres piliers du développement Gladys
 
-<div class="alert alert-info" role="alert" style="padding: 10px;">Attention, cette documentation s'adresse au développement de modules pour la version 3.0 de Gladys. La version 2 étant bientôt deprecated, inutile de développer pour la v2 !</div>
-
 Avant de vous commencer à vous expliquer ce qu'est un module Gladys, je voudrais définir ici les quatres valeurs qui me tiennent à coeur en développant Gladys, et que vous devez aussi prendre en compte dans le développement de modules pour que l'ensemble soit harmonieux !
 
 Voyez ça comme des "guidelines" de développement ;) 

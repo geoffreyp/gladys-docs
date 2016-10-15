@@ -1,7 +1,5 @@
 ##Les fonctions disponibles dans Gladys
 
-<div class="alert alert-info" role="alert" style="padding: 10px;">Attention, cette documentation s'adresse à la version 3.0 de Gladys. La version 2 étant bientôt deprecated, inutile de développer pour la v2 !</div>
-
 Que vous soyez dans des scripts, ou dans un module Gladys, vous pouvez accéder à toutes les fonctions de l'API Gladys.
 
 Ces fonctions sont regroupés sous la variable `gladys` accessible partout.
