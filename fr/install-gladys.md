@@ -1,7 +1,10 @@
 ## Installer Gladys
 
-<div class="alert alert-info" role="alert" style="padding: 10px;">Attention, cette documentation explique comment installer Gladys en mode développeur pour la v3 ! La version 2 étant bientôt deprecated, inutile de développer pour la v2 ! Cette installation est conçue pour développer, ce n'est pas comme cela qu'on installe Gladys en production.</div>
+### Installation rapide
 
+Pour installer Gladys sur un Raspberry Pi en quelques clics, vous pouvez suivre le tutoriel : [Installer Gladys sur un Raspberry Pi](https://gladysproject.com/fr/installation).
+
+### Installation manuelle
 
 Gladys est conçue pour tourner aussi bien sur Linux, Mac ou Windows.
 Nous allons voir ici comment installer Gladys en tant que développeur depuis le github.
