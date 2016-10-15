@@ -1,7 +1,5 @@
 ##The Four Pillars of Gladys development 
 
-<div class="alert alert-info" role="alert" style="padding: 10px;">Beware, this documentation is about Gladys 3.0 ! Gladys v2 is going to be deprecated soon, so don't work on it anymore :)</div>
-
 Before teaching you how to write a Gladys module, I would like to begin with a quick introduction of four important points you should focus on when developing for Gladys.
 
 See this as "Guidelines" ! 
