@@ -1,7 +1,12 @@
 ## Install Gladys
 
-<div class="alert alert-info" role="alert" style="padding: 10px;">Beware, this documentation is about Gladys 3.0 ! Gladys v2 is going to be deprecated soon, so don't work on it anymore :)</div>
 
+### Easy installation
+
+If you want to install Gladys simply on your Raspberry Pi in one click, just follow this tutorial : [Install Gladys on a Raspberry Pi](http://gladysproject.com/en/installation).
+
+
+### Manual installation
 
 Gladys is built on top of Node.js, and work on Linux, Mac, or Windows. This tutorial will help you install Gladys as a developer to work on a module/or on the core. 
 
