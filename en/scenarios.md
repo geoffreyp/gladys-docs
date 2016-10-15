@@ -1,3 +1,5 @@
+## Scenarios in Gladys
+
 Scenarios in Gladys are really easy. It's based on a single concept : 
 
 - First, there is a Trigger ( an "event" ). Like "**IF** I'm going to sleep".
