@@ -1,6 +1,6 @@
 ## Alarms
 
-Alarms are defaulty implemented in Gladys. 
+Alarms clocks are defaulty implemented in Gladys. 
 
 By default, an alarm does nothing. You need to create a scenario which is triggered by a specific alarm ( or any alarm ) to do something on Alarm.
 
