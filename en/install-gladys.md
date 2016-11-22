@@ -12,7 +12,7 @@ Gladys is built on top of Node.js, and work on Linux, Mac, or Windows. This tuto
 
 ### Prerequisites
 
-- Node.js >= 4.2.2 ( Not compatible with Node.js v5 for the moment )
+- Node.js >= 4.2.2 ( release [LTS](https://nodejs.org/en/) is recommended )
 - MySQL
 - Command Line Tools
  - <img src="https://developer.gladysproject.com/assets/images/documentation/apple.gif" height="17">&nbsp;**Mac OS X**: [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (or **OS X 10.9 Mavericks**: `xcode-select --install`)
