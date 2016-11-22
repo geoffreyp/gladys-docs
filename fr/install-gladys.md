@@ -11,7 +11,7 @@ Nous allons voir ici comment installer Gladys en tant que développeur depuis le
 
 ### Pré-requis
 
-- Node.js >= 4.2.2 ( pas compatible avec Node.js v5 )
+- Node.js >= 4.2.2 ( version [LTS](https://nodejs.org/en/) recommandée )
 - MySQL
 - Command Line Tools
  - <img src="https://developer.gladysproject.com/assets/images/documentation/apple.gif" height="17">&nbsp;**Mac OS X**: [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (or **OS X 10.9 Mavericks**: `xcode-select --install`)
